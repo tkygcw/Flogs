@@ -14,6 +14,7 @@ class Log {
   int? timeInMillis;
   LogLevel? logLevel;
   String? stacktrace;
+  bool isTapped;
 
   Log({
     this.className,
@@ -25,6 +26,7 @@ class Log {
     this.logLevel,
     this.dataLogType,
     this.stacktrace,
+    this.isTapped = false,
   });
 
   /// Converts class to json
